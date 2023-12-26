@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet private weak var parentView: UIView!
+    
     @IBOutlet private weak var buttonPoint: UIButton!
     @IBOutlet private weak var buttonZero: UIButton!
     @IBOutlet private weak var buttonEqualSign: UIButton!
