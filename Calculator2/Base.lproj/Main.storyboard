@@ -241,6 +241,7 @@
                         <outlet property="buttonThree" destination="qA7-ye-DNS" id="6vu-PG-Uec"/>
                         <outlet property="buttonTwo" destination="WOE-St-w9O" id="AaC-yC-PdT"/>
                         <outlet property="buttonZero" destination="4hL-sp-p1r" id="Cqs-MX-46d"/>
+                        <outlet property="parentView" destination="iI7-0z-SbK" id="XLi-jv-5eM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
