@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		420F34DC2B4C122400538CFB /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F34DB2B4C122400538CFB /* ThirdVC.swift */; };
-		420F34DE2B4C1B1400538CFB /* FourthFemaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F34DD2B4C1B1400538CFB /* FourthFemaleVC.swift */; };
-		420F34E02B4C205A00538CFB /* FourthMaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F34DF2B4C205A00538CFB /* FourthMaleVC.swift */; };
+		420F34E02B4C205A00538CFB /* FourthGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F34DF2B4C205A00538CFB /* FourthGenderVC.swift */; };
 		420F34E22B4C21CE00538CFB /* FifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F34E12B4C21CE00538CFB /* FifthVC.swift */; };
 		4261530F2B4839CF00C333FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261530E2B4839CF00C333FE /* AppDelegate.swift */; };
 		426153112B4839CF00C333FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426153102B4839CF00C333FE /* SceneDelegate.swift */; };
@@ -22,8 +21,7 @@
 
 /* Begin PBXFileReference section */
 		420F34DB2B4C122400538CFB /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
-		420F34DD2B4C1B1400538CFB /* FourthFemaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthFemaleVC.swift; sourceTree = "<group>"; };
-		420F34DF2B4C205A00538CFB /* FourthMaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthMaleVC.swift; sourceTree = "<group>"; };
+		420F34DF2B4C205A00538CFB /* FourthGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthGenderVC.swift; sourceTree = "<group>"; };
 		420F34E12B4C21CE00538CFB /* FifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthVC.swift; sourceTree = "<group>"; };
 		4261530B2B4839CF00C333FE /* CustomizeAvatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizeAvatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4261530E2B4839CF00C333FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,14 +45,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		426153022B4839CF00C333FE = {
+		42005CFE2B5FC0BB00D44BC2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				420F34E12B4C21CE00538CFB /* FifthVC.swift */,
-				420F34DF2B4C205A00538CFB /* FourthMaleVC.swift */,
-				420F34DD2B4C1B1400538CFB /* FourthFemaleVC.swift */,
+				420F34DF2B4C205A00538CFB /* FourthGenderVC.swift */,
 				420F34DB2B4C122400538CFB /* ThirdVC.swift */,
 				426153222B49823600C333FE /* SecondVC.swift */,
+				426153122B4839CF00C333FE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		426153022B4839CF00C333FE = {
+			isa = PBXGroup;
+			children = (
 				4261530D2B4839CF00C333FE /* CustomizeAvatar */,
 				4261530C2B4839CF00C333FE /* Products */,
 			);
@@ -71,9 +76,9 @@
 		4261530D2B4839CF00C333FE /* CustomizeAvatar */ = {
 			isa = PBXGroup;
 			children = (
+				42005CFE2B5FC0BB00D44BC2 /* ViewControllers */,
 				4261530E2B4839CF00C333FE /* AppDelegate.swift */,
 				426153102B4839CF00C333FE /* SceneDelegate.swift */,
-				426153122B4839CF00C333FE /* ViewController.swift */,
 				426153142B4839CF00C333FE /* Main.storyboard */,
 				426153172B4839D000C333FE /* Assets.xcassets */,
 				426153192B4839D000C333FE /* LaunchScreen.storyboard */,
@@ -154,12 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				426153132B4839CF00C333FE /* ViewController.swift in Sources */,
-				420F34E02B4C205A00538CFB /* FourthMaleVC.swift in Sources */,
+				420F34E02B4C205A00538CFB /* FourthGenderVC.swift in Sources */,
 				420F34E22B4C21CE00538CFB /* FifthVC.swift in Sources */,
 				4261530F2B4839CF00C333FE /* AppDelegate.swift in Sources */,
 				426153232B49823600C333FE /* SecondVC.swift in Sources */,
 				426153112B4839CF00C333FE /* SceneDelegate.swift in Sources */,
-				420F34DE2B4C1B1400538CFB /* FourthFemaleVC.swift in Sources */,
 				420F34DC2B4C122400538CFB /* ThirdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,20 +26,16 @@ class FifthVC: UIViewController {
         case catButton:
             if let image = UIImage(named: "Cat") {
                 data.avatar = image }
-            break
         case glassesButton:
             if let image = UIImage(named: "Glasses") {
                 data.avatar = image }
-            break
         case melomanButton:
             if let image = UIImage(named: "Meloman") {
                 data.avatar = image }
-            break
         case coolmanButton:
             if let image = UIImage(named: "Coolman") {
                 data.avatar = image }
-        default:
-            break
+        default: break
         }
         if let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC {
             secondVC.delegate = delegate
