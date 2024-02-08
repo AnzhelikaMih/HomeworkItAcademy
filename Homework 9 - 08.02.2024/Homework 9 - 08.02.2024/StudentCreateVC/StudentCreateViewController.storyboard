@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ebx-3M-SFw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Student Create View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StudentCreateViewController" id="Y6W-OH-hqX" customClass="StudentCreateViewController" customModule="Homework_9___08_02_2024" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-oc-M4E">
+                                <rect key="frame" x="30" y="128" width="62" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MhS-Gm-o1p">
+                                <rect key="frame" x="30" y="172" width="333" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="KSc-K7-hbZ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-zX-4ZC">
+                                <rect key="frame" x="30.000000000000004" y="231" width="41.333333333333343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sKL-0L-hPF">
+                                <rect key="frame" x="30" y="275" width="333" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="WZO-wb-MRf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtg-WV-Ux9">
+                                <rect key="frame" x="30" y="339" width="333" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="vTN-Lt-oVC"/>
+                                </constraints>
+                                <color key="tintColor" red="0.62745100259999997" green="0.33333334329999997" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choose teacher">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.62745100259999997" green="0.33333334329999997" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chooseTeacherDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9BF-gw-Ywx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="try-IL-yHt">
+                                <rect key="frame" x="30" y="402" width="333" height="48"/>
+                                <color key="backgroundColor" red="0.62745100259999997" green="0.32941177490000001" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="3uH-q4-4TA"/>
+                                    <constraint firstAttribute="height" constant="48" id="YL3-aq-Wau"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderwidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j8h-cn-MXC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MhS-Gm-o1p" secondAttribute="trailing" constant="30" id="7EJ-TK-gP6"/>
+                            <constraint firstItem="MhS-Gm-o1p" firstAttribute="top" secondItem="kN1-oc-M4E" secondAttribute="bottom" constant="15" id="CDl-vk-zab"/>
+                            <constraint firstItem="Xtg-WV-Ux9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="EGM-5F-qAB"/>
+                            <constraint firstItem="kN1-oc-M4E" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Ezc-60-PbE"/>
+                            <constraint firstItem="7xC-zX-4ZC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="IIu-sx-Oo7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="try-IL-yHt" secondAttribute="trailing" constant="30" id="MlK-2a-A9t"/>
+                            <constraint firstItem="kN1-oc-M4E" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="Rgt-oz-EWy"/>
+                            <constraint firstItem="try-IL-yHt" firstAttribute="top" secondItem="Xtg-WV-Ux9" secondAttribute="bottom" constant="15" id="Sdg-k3-E6g"/>
+                            <constraint firstItem="sKL-0L-hPF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="TrW-jI-w51"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Xtg-WV-Ux9" secondAttribute="trailing" constant="30" id="aGP-f3-b29"/>
+                            <constraint firstItem="MhS-Gm-o1p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="dKC-As-kid"/>
+                            <constraint firstItem="7xC-zX-4ZC" firstAttribute="top" secondItem="MhS-Gm-o1p" secondAttribute="bottom" constant="25" id="ebp-0m-1ex"/>
+                            <constraint firstItem="sKL-0L-hPF" firstAttribute="top" secondItem="7xC-zX-4ZC" secondAttribute="bottom" constant="15" id="kZe-hK-MvH"/>
+                            <constraint firstItem="try-IL-yHt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="r7M-zQ-bXI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sKL-0L-hPF" secondAttribute="trailing" constant="30" id="sgN-LS-a05"/>
+                            <constraint firstItem="Xtg-WV-Ux9" firstAttribute="top" secondItem="sKL-0L-hPF" secondAttribute="bottom" constant="30" id="tTi-7H-sef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6oD-G0-fb7"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="sKL-0L-hPF" id="eFk-0Y-6yY"/>
+                        <outlet property="chooseTeacherButton" destination="Xtg-WV-Ux9" id="7Fe-vR-ptP"/>
+                        <outlet property="nameTextField" destination="MhS-Gm-o1p" id="vdd-EZ-GHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.32061068702285" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Re-0o-Q6c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ebx-3M-SFw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rQ1-vp-QmU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="v3b-sk-fcu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlU-KM-22W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.3969465648854964" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
