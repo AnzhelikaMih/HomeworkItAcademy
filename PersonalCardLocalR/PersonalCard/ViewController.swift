@@ -7,17 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    @IBOutlet weak var avatarImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var persInfoButton: UIButton!
-    @IBOutlet weak var educationButton: UIButton!
-    @IBOutlet weak var familyButton: UIButton!
-    @IBOutlet weak var experienceButton: UIButton!
-    @IBOutlet weak var instagramButton: UIButton!
-    @IBOutlet weak var telegramButton: UIButton!
-    @IBOutlet weak var youtubeButton: UIButton!
+    @IBOutlet private weak var avatarImage: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var persInfoButton: UIButton!
+    @IBOutlet private weak var educationButton: UIButton!
+    @IBOutlet private weak var familyButton: UIButton!
+    @IBOutlet private weak var experienceButton: UIButton!
+    @IBOutlet private weak var instagramButton: UIButton!
+    @IBOutlet private weak var telegramButton: UIButton!
+    @IBOutlet private weak var youtubeButton: UIButton!
     
     @IBAction private func persInfoButtonDidTap() {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -61,19 +61,4 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    func privateFunc() {
-    }
-
-    private func privateMethod() {
-    }
-}
-
-extension ViewController: SomeProtocol {
-}
-
-extension ViewController {
-}
-
-protocol SomeProtocol {
 }
