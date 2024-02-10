@@ -17,20 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoA-4X-csf">
-                                <rect key="frame" x="25" y="103" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="25" y="118" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfm-gO-xzW">
-                                <rect key="frame" x="25" y="169" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="25" y="172" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-cl-cuF">
-                                <rect key="frame" x="25" y="235" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="25" y="226" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,7 +41,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KoA-4X-csf" secondAttribute="trailing" constant="25" id="42i-Nc-FPO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qfm-gO-xzW" secondAttribute="trailing" constant="25" id="7yM-Oe-68j"/>
                             <constraint firstAttribute="trailing" secondItem="5fh-cl-cuF" secondAttribute="trailing" constant="25" id="AWL-p3-42E"/>
-                            <constraint firstItem="KoA-4X-csf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Bh2-CV-f1M"/>
+                            <constraint firstItem="KoA-4X-csf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="Bh2-CV-f1M"/>
                             <constraint firstItem="5fh-cl-cuF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="GEd-pk-jqb"/>
                             <constraint firstItem="qfm-gO-xzW" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="25" id="Gif-YY-iOL"/>
                             <constraint firstItem="5fh-cl-cuF" firstAttribute="top" secondItem="qfm-gO-xzW" secondAttribute="bottom" constant="30" id="ZfA-Bm-Ijp"/>

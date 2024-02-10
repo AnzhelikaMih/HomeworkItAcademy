@@ -7,27 +7,37 @@
 
 import UIKit
 
-class StudentDetailsViewController: UIViewController {
+final class StudentDetailsViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var teacherLabel: UILabel!
     
+    var student: StudentViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameLabel.text = ""
+        ageLabel.text = ""
+        teacherLabel.text = ""
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configureStudentDetails (with student: StudentViewModel) {
+        
+        let attrStrName = NSMutableAttributedString(string: "Name: \(student.name)")
+        let nameRange = NSRange(location: 0, length: String("Name:").count)
+        attrStrName.addAttribute(.font, value: UIFont.systemFont(ofSize: 20, weight: .regular), range: nameRange)
+        
+        let attrStrAge = NSMutableAttributedString(string: "Age: \(student.age)")
+        let ageRange = NSRange(location: 0, length: String("Age:").count)
+        attrStrAge.addAttribute(.font, value: UIFont.systemFont(ofSize: 20, weight: .regular), range: ageRange)
+        
+        let attrStrTeacher = NSMutableAttributedString(string: "Teacher: \(student.teacher.firstName) \(student.teacher.lastName)")
+        let teacherRange = NSRange(location: 0, length: String("Teacher:").count)
+        attrStrTeacher.addAttribute(.font, value: UIFont.systemFont(ofSize: 20, weight: .regular), range: teacherRange)
+        
+        nameLabel.attributedText = attrStrName
+        ageLabel.attributedText = attrStrAge
+        teacherLabel.attributedText = attrStrTeacher
     }
-    */
-
 }

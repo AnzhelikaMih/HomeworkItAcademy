@@ -31,8 +31,14 @@ final class CoreDataService {
         let newStudent = Student(context: self.context)
         newStudent.age = student.age
         newStudent.name = student.name
-        newStudent.teacher?.lastName = student.teacherLastName
         
+        let request = Teacher.fetchRequest()
+        let predicate = NSPredicate(format: "firstName == %@ AND lastName == %@", student.teacher.firstName , student.teacher.lastName)
+        request.predicate = predicate
+        
+        if let teachers = try? context.fetch(request), let teacher = teachers.first {
+            newStudent.teacher = teacher
+        }
         saveContext()
     }
     
@@ -47,7 +53,7 @@ final class CoreDataService {
     func fetchStudents() -> [StudentViewModel] {
         let request = Student.fetchRequest()
         guard let students = try? context.fetch(request) else { return [] }
-        let studentViewModels = students.compactMap { return StudentViewModel(name: $0.name ?? "nil", age: $0.age, teacherLastName: $0.teacher?.lastName ?? "nil") }
+        let studentViewModels = students.compactMap { return StudentViewModel(name: $0.name ?? "nil", age: $0.age, teacher: TeacherViewModel(firstName: $0.teacher?.firstName ?? "nil", lastName: $0.teacher?.lastName ?? "nil")) }
         return studentViewModels
     }
     

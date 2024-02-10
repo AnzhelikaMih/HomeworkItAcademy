@@ -35,7 +35,13 @@
                             <constraint firstItem="sGb-k9-TVu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="iqE-er-FWt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kAD-Jl-6ME"/>
+                    <navigationItem key="navigationItem" id="kAD-Jl-6ME">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ym6-rj-EQP">
+                            <connections>
+                                <action selector="addButtonDidTap" destination="Y6W-OH-hqX" id="BSd-6K-1ta"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="chooseTeacherTableView" destination="sGb-k9-TVu" id="rbZ-ha-mg6"/>
                     </connections>

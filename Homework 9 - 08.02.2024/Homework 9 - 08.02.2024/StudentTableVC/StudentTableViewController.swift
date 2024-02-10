@@ -36,7 +36,6 @@ final class StudentTableViewController: UIViewController {
     }
 }
 
-
 extension StudentTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return students.count
@@ -44,12 +43,10 @@ extension StudentTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let student = students[indexPath.row]
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(student.name) \(student.age) \(student.teacherLastName)"
+        let cell = StudentTableViewCell()
+        cell.configureStudentCell(with: student)
         return cell
     }
-    
-    
 }
 
 extension StudentTableViewController: UITableViewDelegate {
@@ -59,10 +56,9 @@ extension StudentTableViewController: UITableViewDelegate {
         let storyboard = UIStoryboard(name: "StudentDetailsViewController", bundle: nil)
         
         if let vc = storyboard.instantiateViewController(withIdentifier: "StudentDetailsViewController") as? StudentDetailsViewController {
+            
             vc.loadView()
-            vc.nameLabel.text = "Name: \(student.name)"
-            vc.ageLabel.text = "Age: \(student.age)"
-            vc.teacherLabel.text = "Teacher: \(student.teacherLastName)"
+            vc.configureStudentDetails(with: student)
             
             navigationController?.pushViewController(vc, animated: true)
         }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChooseTeacherViewController: UIViewController {
+final class ChooseTeacherViewController: UIViewController {
 
     @IBOutlet private weak var chooseTeacherTableView: UITableView!
     
@@ -19,7 +19,6 @@ class ChooseTeacherViewController: UIViewController {
     
     var teacherSelectionHandler: ((TeacherViewModel) -> Void)?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
@@ -28,8 +27,17 @@ class ChooseTeacherViewController: UIViewController {
     private func fetchData() {
         teachers = CoreDataService.shared.fetchTeachers()
     }
+    
+    @IBAction private func addButtonDidTap() {
+        let storyboard = UIStoryboard(name: "TeacherCreateViewController", bundle: nil)
+        
+        if let vc = storyboard.instantiateViewController(withIdentifier: "TeacherCreateViewController") as? TeacherCreateViewController {
+            
+            vc.delegate = self
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
-
 
 extension ChooseTeacherViewController: UITableViewDataSource {
 
@@ -38,24 +46,18 @@ extension ChooseTeacherViewController: UITableViewDataSource {
 }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let teacher = teachers[indexPath.row]
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(teacher.firstName) \(teacher.lastName)"
+        let cell = TeacherTableViewCell()
+        cell.configureTeacherCell (with: teacher)
         return cell
     }
-    
 }
 
 extension ChooseTeacherViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedTeacher = teachers[indexPath.row]
         teacherSelectionHandler?(selectedTeacher)
-        
-//        let storyboard = UIStoryboard(name: "StudentCreateViewController", bundle: nil)
-//        if let vc = storyboard.instantiateViewController(withIdentifier: "StudentCreateViewController") as? StudentCreateViewController {
-//
-//            vc.teacher = selectedTeacher
-            
         
         navigationController?.popViewController(animated: true)
     }

@@ -30,39 +30,43 @@ class TeacherTableViewController: UIViewController {
         let storyboard = UIStoryboard(name: "TeacherCreateViewController", bundle: nil)
         
         if let vc = storyboard.instantiateViewController(withIdentifier: "TeacherCreateViewController") as? TeacherCreateViewController {
+            
             vc.delegate = self
+            
             navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
 
-
 extension TeacherTableViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return teachers.count
-}
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let teacher = teachers[indexPath.row]
-        let cell = UITableViewCell()
-        
-        /*
-        let attrString = NSMutableAttributedString(string: "\(student.name) \(student.age)")
-        
-        let nameRange = NSRange(location: 0, length: student.name.count)
-            attrString.addAttribute(.font, value: UIFont.systemFont(ofSize: 20, weight: .bold), range: nameRange)
-
-        let ageRange = NSRange(location: student.name.count + 1, length: Int(student.age))
-            attrString.addAttribute(.font, value: UIFont.systemFont(ofSize: 20), range: ageRange)
-
-            cell.textLabel?.attributedText = attrString
-         */
-        cell.textLabel?.text = "\(teacher.firstName) \(teacher.lastName)"
-        return cell
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let teacher = teachers[indexPath.row]
+        let cell = TeacherTableViewCell()
+        cell.configureTeacherCell(with: teacher)
+        return cell
+    }
+}
+
+extension TeacherTableViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let teacher = teachers[indexPath.row]
+        let storyboard = UIStoryboard(name: "TeacherDetailsViewController", bundle: nil)
+        if let vc = storyboard.instantiateViewController(identifier: "TeacherDetailsViewController") as? TeacherDetailsViewController {
+            
+            vc.loadView()
+            vc.getStudentsForTeacher(with: teacher)
+            vc.configureTeacherDetails(with: teacher)
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 extension TeacherTableViewController: TeacherDelegate {

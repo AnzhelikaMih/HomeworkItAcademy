@@ -7,23 +7,18 @@
 
 import UIKit
 
-class TeacherTableViewCell: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+final class TeacherTableViewCell: UITableViewCell {
     
+    private var teacher: TeacherViewModel?
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configureTeacherCell (with teacher: TeacherViewModel) {
+        
+        textLabel?.font = .systemFont(ofSize: 20)
+        
+        let attrString = NSMutableAttributedString(string: "\(teacher.firstName) \(teacher.lastName)")
+        let nameRange = NSRange(location: 0, length: teacher.firstName.count)
+            attrString.addAttribute(.font, value: UIFont.systemFont(ofSize: 20, weight: .bold), range: nameRange)
+        
+        textLabel?.attributedText = attrString
     }
-    */
-
 }
