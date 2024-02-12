@@ -62,14 +62,10 @@
 		42005CBC2B59189700D44BC2 /* Homework8 - 25.01.2024 */ = {
 			isa = PBXGroup;
 			children = (
+				42442E102B7A29A200A8856C /* Resourse */,
 				42005CDB2B59282200D44BC2 /* Cell */,
-				42005CBD2B59189700D44BC2 /* AppDelegate.swift */,
-				42005CBF2B59189700D44BC2 /* SceneDelegate.swift */,
-				42005CC12B59189700D44BC2 /* ViewController.swift */,
-				42005CDC2B592DE500D44BC2 /* SecondVC.swift */,
+				42442E112B7A29D800A8856C /* ViewControllers */,
 				42005CC32B59189700D44BC2 /* Main.storyboard */,
-				42005CC62B59189800D44BC2 /* Assets.xcassets */,
-				42005CC82B59189800D44BC2 /* LaunchScreen.storyboard */,
 				42005CCB2B59189800D44BC2 /* Info.plist */,
 			);
 			path = "Homework8 - 25.01.2024";
@@ -82,6 +78,26 @@
 				42005CD72B59276700D44BC2 /* PersonTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		42442E102B7A29A200A8856C /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				42005CBD2B59189700D44BC2 /* AppDelegate.swift */,
+				42005CBF2B59189700D44BC2 /* SceneDelegate.swift */,
+				42005CC62B59189800D44BC2 /* Assets.xcassets */,
+				42005CC82B59189800D44BC2 /* LaunchScreen.storyboard */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		42442E112B7A29D800A8856C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				42005CDC2B592DE500D44BC2 /* SecondVC.swift */,
+				42005CC12B59189700D44BC2 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
