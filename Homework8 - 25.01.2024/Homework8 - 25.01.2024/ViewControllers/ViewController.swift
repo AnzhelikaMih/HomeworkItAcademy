@@ -86,8 +86,7 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if let personsInSection = groupedContacts[letter], indexPath.row < personsInSection.count {
             let person = personsInSection[indexPath.row]
-            cell?.nameLabel.text = person.name
-            cell?.lastNameLabel.text = person.lastName
+            cell?.configure(with: person)
         }
         return cell!
     }
