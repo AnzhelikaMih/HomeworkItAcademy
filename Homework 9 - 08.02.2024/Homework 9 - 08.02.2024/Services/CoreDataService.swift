@@ -46,7 +46,6 @@ final class CoreDataService {
         let newTeacher = Teacher(context: self.context)
         newTeacher.firstName = teacher.firstName
         newTeacher.lastName = teacher.lastName
-        
         saveContext()
     }
     

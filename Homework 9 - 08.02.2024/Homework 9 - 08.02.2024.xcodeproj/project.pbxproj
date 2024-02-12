@@ -62,9 +62,9 @@
 		4293831C2B712A66006607D3 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		429383262B712B51006607D3 /* StudentTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentTableViewController.storyboard; sourceTree = "<group>"; };
 		429383282B712C5A006607D3 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
-		4293832B2B712F20006607D3 /* StudentCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCreateViewController.swift; sourceTree = "<group>"; };
+		4293832B2B712F20006607D3 /* StudentCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudentCreateViewController.swift; path = ../TableViewCells/StudentCreateViewController.swift; sourceTree = "<group>"; };
 		4293832D2B712F3A006607D3 /* StudentCreateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentCreateViewController.storyboard; sourceTree = "<group>"; };
-		4293832F2B7130D0006607D3 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = "Homework 9 - 08.02.2024/Models/Structs.swift"; sourceTree = SOURCE_ROOT; };
+		4293832F2B7130D0006607D3 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = "Homework 9 - 08.02.2024/Structs/Structs.swift"; sourceTree = SOURCE_ROOT; };
 		429383322B7143C1006607D3 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		429383392B715B58006607D3 /* TeacherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewController.swift; sourceTree = "<group>"; };
 		4293833B2B715B6D006607D3 /* TeacherTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherTableViewController.storyboard; sourceTree = "<group>"; };
@@ -94,6 +94,14 @@
 			path = Resourse;
 			sourceTree = "<group>";
 		};
+		42442E0F2B7A165400A8856C /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				4293832F2B7130D0006607D3 /* Structs.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		429382F42B7123FB006607D3 = {
 			isa = PBXGroup;
 			children = (
@@ -114,11 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				429383312B7143AB006607D3 /* Services */,
-				429383142B712503006607D3 /* FirstScreen */,
-				429383252B712B1D006607D3 /* StudentTableVC */,
-				4293832A2B712EE6006607D3 /* StudentCreateVC */,
-				429383382B715B1B006607D3 /* TeacherTableVC */,
-				4293833D2B715E08006607D3 /* TeacherCreateVC */,
+				42442E0F2B7A165400A8856C /* Structs */,
+				429383142B712503006607D3 /* Storyboards */,
+				429383252B712B1D006607D3 /* ViewControllers */,
+				4293832A2B712EE6006607D3 /* TableViewCells */,
 				429383152B71276D006607D3 /* Models */,
 				4293830E2B7123FC006607D3 /* Info.plist */,
 				422951CA2B734F2600E94316 /* Resourse */,
@@ -126,19 +133,24 @@
 			path = "Homework 9 - 08.02.2024";
 			sourceTree = "<group>";
 		};
-		429383142B712503006607D3 /* FirstScreen */ = {
+		429383142B712503006607D3 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				429383062B7123FB006607D3 /* Main.storyboard */,
-				429383042B7123FB006607D3 /* FirstViewController.swift */,
+				429383262B712B51006607D3 /* StudentTableViewController.storyboard */,
+				422951D52B73B7FF00E94316 /* StudentDetailsViewController.storyboard */,
+				4293832D2B712F3A006607D3 /* StudentCreateViewController.storyboard */,
+				422951CB2B734F7A00E94316 /* ChooseTeacherViewController.storyboard */,
+				4293833B2B715B6D006607D3 /* TeacherTableViewController.storyboard */,
+				42442E0B2B7654B100A8856C /* TeacherDetailsViewController.storyboard */,
+				429383402B715E3D006607D3 /* TeacherCreateViewController.storyboard */,
 			);
-			path = FirstScreen;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		429383152B71276D006607D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4293832F2B7130D0006607D3 /* Structs.swift */,
 				429383192B712A66006607D3 /* Teacher+CoreDataClass.swift */,
 				4293831C2B712A66006607D3 /* Student+CoreDataProperties.swift */,
 				4293831A2B712A66006607D3 /* Teacher+CoreDataProperties.swift */,
@@ -148,27 +160,28 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		429383252B712B1D006607D3 /* StudentTableVC */ = {
+		429383252B712B1D006607D3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				429383262B712B51006607D3 /* StudentTableViewController.storyboard */,
+				429383042B7123FB006607D3 /* FirstViewController.swift */,
 				429383282B712C5A006607D3 /* StudentTableViewController.swift */,
-				42442E0D2B765C9000A8856C /* StudentTableViewCell.swift */,
-				422951D52B73B7FF00E94316 /* StudentDetailsViewController.storyboard */,
 				422951D32B73B7EC00E94316 /* StudentDetailsViewController.swift */,
+				4293832B2B712F20006607D3 /* StudentCreateViewController.swift */,
+				422951CD2B734FCF00E94316 /* ChooseTeacherViewController.swift */,
+				429383392B715B58006607D3 /* TeacherTableViewController.swift */,
+				42442E092B76545200A8856C /* TeacherDetailsViewController.swift */,
+				4293833E2B715E29006607D3 /* TeacherCreateViewController.swift */,
 			);
-			path = StudentTableVC;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		4293832A2B712EE6006607D3 /* StudentCreateVC */ = {
+		4293832A2B712EE6006607D3 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				4293832D2B712F3A006607D3 /* StudentCreateViewController.storyboard */,
-				4293832B2B712F20006607D3 /* StudentCreateViewController.swift */,
-				422951CB2B734F7A00E94316 /* ChooseTeacherViewController.storyboard */,
-				422951CD2B734FCF00E94316 /* ChooseTeacherViewController.swift */,
+				42442E0D2B765C9000A8856C /* StudentTableViewCell.swift */,
+				42442E072B76542600A8856C /* TeacherTableViewCell.swift */,
 			);
-			path = StudentCreateVC;
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		429383312B7143AB006607D3 /* Services */ = {
@@ -177,27 +190,6 @@
 				429383322B7143C1006607D3 /* CoreDataService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		429383382B715B1B006607D3 /* TeacherTableVC */ = {
-			isa = PBXGroup;
-			children = (
-				4293833B2B715B6D006607D3 /* TeacherTableViewController.storyboard */,
-				429383392B715B58006607D3 /* TeacherTableViewController.swift */,
-				42442E072B76542600A8856C /* TeacherTableViewCell.swift */,
-				42442E092B76545200A8856C /* TeacherDetailsViewController.swift */,
-				42442E0B2B7654B100A8856C /* TeacherDetailsViewController.storyboard */,
-			);
-			path = TeacherTableVC;
-			sourceTree = "<group>";
-		};
-		4293833D2B715E08006607D3 /* TeacherCreateVC */ = {
-			isa = PBXGroup;
-			children = (
-				429383402B715E3D006607D3 /* TeacherCreateViewController.storyboard */,
-				4293833E2B715E29006607D3 /* TeacherCreateViewController.swift */,
-			);
-			path = TeacherCreateVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
