@@ -19,14 +19,12 @@ final class TeacherDetailsViewController: UIViewController {
         }
     }
     
-    var studentsForTeacher = [StudentViewModel]()
+    private var studentsForTeacher = [StudentViewModel]()
     
     var teacher: TeacherViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = ""
-        lastNameLabel.text = ""
     }
     
     func getStudentsForTeacher(with teacher: TeacherViewModel) {
@@ -60,5 +58,18 @@ extension TeacherDetailsViewController: UITableViewDataSource {
         let cell = StudentTableViewCell()
         cell.configureStudentCell(with: student)
         return cell
+    }
+}
+
+extension TeacherDetailsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let student = studentsForTeacher[indexPath.row]
+        let storyboard = UIStoryboard(name: "StudentDetailsViewController", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "StudentDetailsViewController") as? StudentDetailsViewController {
+            
+            vc.loadView()
+            vc.configureStudentDetails(with: student)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

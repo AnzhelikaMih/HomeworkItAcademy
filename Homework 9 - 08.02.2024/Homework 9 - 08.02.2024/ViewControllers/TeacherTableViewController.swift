@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeacherTableViewController: UIViewController {
+final class TeacherTableViewController: UIViewController {
 
     @IBOutlet private weak var teachersTableView: UITableView!
     
@@ -28,24 +28,19 @@ class TeacherTableViewController: UIViewController {
 
     @IBAction private func addButtonDidTap() {
         let storyboard = UIStoryboard(name: "TeacherCreateViewController", bundle: nil)
-        
         if let vc = storyboard.instantiateViewController(withIdentifier: "TeacherCreateViewController") as? TeacherCreateViewController {
-            
             vc.delegate = self
-            
             navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
 
 extension TeacherTableViewController: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return teachers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let teacher = teachers[indexPath.row]
         let cell = TeacherTableViewCell()
         cell.configureTeacherCell(with: teacher)
@@ -54,9 +49,7 @@ extension TeacherTableViewController: UITableViewDataSource {
 }
 
 extension TeacherTableViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let teacher = teachers[indexPath.row]
         let storyboard = UIStoryboard(name: "TeacherDetailsViewController", bundle: nil)
         if let vc = storyboard.instantiateViewController(identifier: "TeacherDetailsViewController") as? TeacherDetailsViewController {

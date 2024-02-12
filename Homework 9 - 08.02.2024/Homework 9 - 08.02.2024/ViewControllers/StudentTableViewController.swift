@@ -28,7 +28,6 @@ final class StudentTableViewController: UIViewController {
 
     @IBAction private func addButtonDidTap() {
         let storyboard = UIStoryboard(name: "StudentCreateViewController", bundle: nil)
-        
         if let vc = storyboard.instantiateViewController(withIdentifier: "StudentCreateViewController") as? StudentCreateViewController {
             vc.delegate = self
             navigationController?.pushViewController(vc, animated: true)
@@ -52,19 +51,15 @@ extension StudentTableViewController: UITableViewDataSource {
 extension StudentTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let student = students[indexPath.row]
-        
         let storyboard = UIStoryboard(name: "StudentDetailsViewController", bundle: nil)
-        
         if let vc = storyboard.instantiateViewController(withIdentifier: "StudentDetailsViewController") as? StudentDetailsViewController {
             
             vc.loadView()
             vc.configureStudentDetails(with: student)
-            
             navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
-
 
 extension StudentTableViewController: StudentDelegate {
     func updateStudents() {

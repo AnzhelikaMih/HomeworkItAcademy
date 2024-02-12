@@ -9,17 +9,14 @@ import UIKit
 
 final class StudentDetailsViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
-    @IBOutlet weak var teacherLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var ageLabel: UILabel!
+    @IBOutlet private weak var teacherLabel: UILabel!
     
-    var student: StudentViewModel?
+    private var student: StudentViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = ""
-        ageLabel.text = ""
-        teacherLabel.text = ""
     }
     
     func configureStudentDetails (with student: StudentViewModel) {

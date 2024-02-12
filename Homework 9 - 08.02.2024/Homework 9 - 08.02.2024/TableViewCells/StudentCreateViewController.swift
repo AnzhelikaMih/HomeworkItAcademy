@@ -15,19 +15,18 @@ final class StudentCreateViewController: UIViewController {
     
     @IBOutlet private weak var nameTextField: UITextField!
     @IBOutlet private weak var ageTextField: UITextField!
-    @IBOutlet weak var chooseTeacherButton: UIButton!
+    @IBOutlet private weak var chooseTeacherButton: UIButton!
     
-    private var student: StudentViewModel?
     private var selectedTeacher: TeacherViewModel?
    
     weak var delegate: StudentDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        chooseTeacherButtonUI ()
+        chooseTeacherButtonUI()
     }
     
-    private func chooseTeacherButtonUI () {
+    private func chooseTeacherButtonUI() {
         chooseTeacherButton.layer.borderWidth = 1
         chooseTeacherButton.layer.borderColor = UIColor.purple.cgColor
     }
@@ -46,8 +45,7 @@ final class StudentCreateViewController: UIViewController {
         delegate?.updateStudents()
     }
     
-    @IBAction func chooseTeacherDidTap(_ sender: Any) {
-        
+    @IBAction private func chooseTeacherDidTap(_ sender: Any) {
         let storyboard = UIStoryboard(name: "ChooseTeacherViewController", bundle: nil)
         if let vc = storyboard.instantiateViewController(withIdentifier: "ChooseTeacherViewController") as? ChooseTeacherViewController {
             
@@ -59,8 +57,7 @@ final class StudentCreateViewController: UIViewController {
         }
     }
     
-    @IBAction func saveButtonDidTap(_ sender: Any) {
-        
+    @IBAction private func saveButtonDidTap(_ sender: Any) {
         saveData()
         navigationController?.popViewController(animated: true)
     }

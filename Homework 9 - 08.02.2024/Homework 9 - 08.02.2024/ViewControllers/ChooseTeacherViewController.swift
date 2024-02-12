@@ -30,9 +30,7 @@ final class ChooseTeacherViewController: UIViewController {
     
     @IBAction private func addButtonDidTap() {
         let storyboard = UIStoryboard(name: "TeacherCreateViewController", bundle: nil)
-        
         if let vc = storyboard.instantiateViewController(withIdentifier: "TeacherCreateViewController") as? TeacherCreateViewController {
-            
             vc.delegate = self
             navigationController?.pushViewController(vc, animated: true)
         }
@@ -40,13 +38,11 @@ final class ChooseTeacherViewController: UIViewController {
 }
 
 extension ChooseTeacherViewController: UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return teachers.count
-}
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let teacher = teachers[indexPath.row]
         let cell = TeacherTableViewCell()
         cell.configureTeacherCell (with: teacher)
@@ -58,7 +54,6 @@ extension ChooseTeacherViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedTeacher = teachers[indexPath.row]
         teacherSelectionHandler?(selectedTeacher)
-        
         navigationController?.popViewController(animated: true)
     }
 }

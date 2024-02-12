@@ -7,14 +7,13 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+final class FirstViewController: UIViewController {
     
-    @IBOutlet weak var studentsButton: UIButton!
-    @IBOutlet weak var teachersButton: UIButton!
+    @IBOutlet private weak var studentsButton: UIButton!
+    @IBOutlet private weak var teachersButton: UIButton!
     
     @IBAction private func studentsButtonDidTap(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "StudentTableViewController", bundle: nil)
-        
         if let vc = storyboard.instantiateViewController(withIdentifier: "StudentTableViewController") as? StudentTableViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
@@ -22,12 +21,10 @@ class FirstViewController: UIViewController {
     
     @IBAction private func teachersButtonDidTap(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "TeacherTableViewController", bundle: nil)
-        
         if let vc = storyboard.instantiateViewController(withIdentifier: "TeacherTableViewController") as? TeacherTableViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
 }
    
 
