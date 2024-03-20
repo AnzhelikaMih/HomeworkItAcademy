@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondVC: UIViewController {
+final class SecondVC: UIViewController {
     
     @IBOutlet private weak var nameTextField: UITextField!
     @IBOutlet private weak var lastNameTextField: UITextField!
@@ -35,12 +35,16 @@ class SecondVC: UIViewController {
         saveButton.tintColor = .white
     }
     
-    @IBAction func cancelButtonDidTap(_ sender: Any) {
+    @IBAction private func cancelButtonDidTap(_ sender: Any) {
         dismiss(animated: true)
     }
     
-    @IBAction func saveButtonDidTap(_ sender: Any) {
-        guard let name = nameTextField.text, let lastName = lastNameTextField.text, !name.isEmpty, !lastName.isEmpty else { return }
+    @IBAction private func saveButtonDidTap(_ sender: Any) {
+        guard let name = nameTextField.text,
+              let lastName = lastNameTextField.text,
+              !name.isEmpty,
+              !lastName.isEmpty
+              else { return }
         let newPerson = Person(name: name, lastName: lastName)
         delegate?.configure(person: newPerson)
         dismiss(animated: true)
@@ -51,7 +55,7 @@ extension SecondVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == nameTextField {
             lastNameTextField.becomeFirstResponder()
-        } else {
+            } else {
             textField.resignFirstResponder()
         }
     }

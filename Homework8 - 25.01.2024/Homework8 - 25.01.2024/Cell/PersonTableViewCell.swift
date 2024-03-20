@@ -7,15 +7,21 @@
 
 import UIKit
 
-class PersonTableViewCell: UITableViewCell {
+final class PersonTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var lastNameLabel: UILabel!
+    
+    private var person: Person?
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    func configure (with person: Person) {
+        nameLabel.text = person.name
+        lastNameLabel.text = person.lastName
+    }
 }
     
 
