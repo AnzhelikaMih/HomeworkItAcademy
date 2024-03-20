@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		422951CC2B734F7A00E94316 /* ChooseTeacherViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422951CB2B734F7A00E94316 /* ChooseTeacherViewController.storyboard */; };
+		422951CE2B734FCF00E94316 /* ChooseTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422951CD2B734FCF00E94316 /* ChooseTeacherViewController.swift */; };
+		422951D42B73B7EC00E94316 /* StudentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422951D32B73B7EC00E94316 /* StudentDetailsViewController.swift */; };
+		422951D62B73B7FF00E94316 /* StudentDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422951D52B73B7FF00E94316 /* StudentDetailsViewController.storyboard */; };
+		42442E082B76542600A8856C /* TeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42442E072B76542600A8856C /* TeacherTableViewCell.swift */; };
+		42442E0A2B76545200A8856C /* TeacherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42442E092B76545200A8856C /* TeacherDetailsViewController.swift */; };
+		42442E0C2B7654B100A8856C /* TeacherDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42442E0B2B7654B100A8856C /* TeacherDetailsViewController.storyboard */; };
+		42442E0E2B765C9000A8856C /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42442E0D2B765C9000A8856C /* StudentTableViewCell.swift */; };
+		429383012B7123FB006607D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383002B7123FB006607D3 /* AppDelegate.swift */; };
+		429383032B7123FB006607D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383022B7123FB006607D3 /* SceneDelegate.swift */; };
+		429383052B7123FB006607D3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383042B7123FB006607D3 /* FirstViewController.swift */; };
+		429383082B7123FB006607D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429383062B7123FB006607D3 /* Main.storyboard */; };
+		4293830A2B7123FC006607D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429383092B7123FC006607D3 /* Assets.xcassets */; };
+		4293830D2B7123FC006607D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4293830B2B7123FC006607D3 /* LaunchScreen.storyboard */; };
+		429383182B7127E2006607D3 /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 429383162B7127E2006607D3 /* Models.xcdatamodeld */; };
+		4293831D2B712A66006607D3 /* Teacher+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383192B712A66006607D3 /* Teacher+CoreDataClass.swift */; };
+		4293831E2B712A67006607D3 /* Teacher+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293831A2B712A66006607D3 /* Teacher+CoreDataProperties.swift */; };
+		4293831F2B712A67006607D3 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293831B2B712A66006607D3 /* Student+CoreDataClass.swift */; };
+		429383202B712A67006607D3 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293831C2B712A66006607D3 /* Student+CoreDataProperties.swift */; };
+		429383272B712B51006607D3 /* StudentTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429383262B712B51006607D3 /* StudentTableViewController.storyboard */; };
+		429383292B712C5A006607D3 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383282B712C5A006607D3 /* StudentTableViewController.swift */; };
+		4293832C2B712F20006607D3 /* StudentCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293832B2B712F20006607D3 /* StudentCreateViewController.swift */; };
+		4293832E2B712F3A006607D3 /* StudentCreateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4293832D2B712F3A006607D3 /* StudentCreateViewController.storyboard */; };
+		429383302B7130D0006607D3 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293832F2B7130D0006607D3 /* Structs.swift */; };
+		429383332B7143C1006607D3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383322B7143C1006607D3 /* CoreDataService.swift */; };
+		4293833A2B715B58006607D3 /* TeacherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429383392B715B58006607D3 /* TeacherTableViewController.swift */; };
+		4293833C2B715B6D006607D3 /* TeacherTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4293833B2B715B6D006607D3 /* TeacherTableViewController.storyboard */; };
+		4293833F2B715E29006607D3 /* TeacherCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4293833E2B715E29006607D3 /* TeacherCreateViewController.swift */; };
+		429383412B715E3D006607D3 /* TeacherCreateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429383402B715E3D006607D3 /* TeacherCreateViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		422951CB2B734F7A00E94316 /* ChooseTeacherViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseTeacherViewController.storyboard; sourceTree = "<group>"; };
+		422951CD2B734FCF00E94316 /* ChooseTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTeacherViewController.swift; sourceTree = "<group>"; };
+		422951D32B73B7EC00E94316 /* StudentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailsViewController.swift; sourceTree = "<group>"; };
+		422951D52B73B7FF00E94316 /* StudentDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentDetailsViewController.storyboard; sourceTree = "<group>"; };
+		42442E072B76542600A8856C /* TeacherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewCell.swift; sourceTree = "<group>"; };
+		42442E092B76545200A8856C /* TeacherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDetailsViewController.swift; sourceTree = "<group>"; };
+		42442E0B2B7654B100A8856C /* TeacherDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherDetailsViewController.storyboard; sourceTree = "<group>"; };
+		42442E0D2B765C9000A8856C /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		429382FD2B7123FB006607D3 /* Homework 9 - 08.02.2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 9 - 08.02.2024.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		429383002B7123FB006607D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		429383022B7123FB006607D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		429383042B7123FB006607D3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		429383072B7123FB006607D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		429383092B7123FC006607D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4293830C2B7123FC006607D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4293830E2B7123FC006607D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429383172B7127E2006607D3 /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
+		429383192B712A66006607D3 /* Teacher+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4293831A2B712A66006607D3 /* Teacher+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teacher+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4293831B2B712A66006607D3 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4293831C2B712A66006607D3 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		429383262B712B51006607D3 /* StudentTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentTableViewController.storyboard; sourceTree = "<group>"; };
+		429383282B712C5A006607D3 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		4293832B2B712F20006607D3 /* StudentCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudentCreateViewController.swift; path = ../TableViewCells/StudentCreateViewController.swift; sourceTree = "<group>"; };
+		4293832D2B712F3A006607D3 /* StudentCreateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentCreateViewController.storyboard; sourceTree = "<group>"; };
+		4293832F2B7130D0006607D3 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = "Homework 9 - 08.02.2024/Structs/Structs.swift"; sourceTree = SOURCE_ROOT; };
+		429383322B7143C1006607D3 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		429383392B715B58006607D3 /* TeacherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewController.swift; sourceTree = "<group>"; };
+		4293833B2B715B6D006607D3 /* TeacherTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherTableViewController.storyboard; sourceTree = "<group>"; };
+		4293833E2B715E29006607D3 /* TeacherCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCreateViewController.swift; sourceTree = "<group>"; };
+		429383402B715E3D006607D3 /* TeacherCreateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeacherCreateViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		429382FA2B7123FB006607D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422951CA2B734F2600E94316 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				429383092B7123FC006607D3 /* Assets.xcassets */,
+				4293830B2B7123FC006607D3 /* LaunchScreen.storyboard */,
+				429383022B7123FB006607D3 /* SceneDelegate.swift */,
+				429383002B7123FB006607D3 /* AppDelegate.swift */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		42442E0F2B7A165400A8856C /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				4293832F2B7130D0006607D3 /* Structs.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		429382F42B7123FB006607D3 = {
+			isa = PBXGroup;
+			children = (
+				429382FF2B7123FB006607D3 /* Homework 9 - 08.02.2024 */,
+				429382FE2B7123FB006607D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		429382FE2B7123FB006607D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				429382FD2B7123FB006607D3 /* Homework 9 - 08.02.2024.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		429382FF2B7123FB006607D3 /* Homework 9 - 08.02.2024 */ = {
+			isa = PBXGroup;
+			children = (
+				429383312B7143AB006607D3 /* Services */,
+				42442E0F2B7A165400A8856C /* Structs */,
+				429383142B712503006607D3 /* Storyboards */,
+				429383252B712B1D006607D3 /* ViewControllers */,
+				4293832A2B712EE6006607D3 /* TableViewCells */,
+				429383152B71276D006607D3 /* Models */,
+				4293830E2B7123FC006607D3 /* Info.plist */,
+				422951CA2B734F2600E94316 /* Resourse */,
+			);
+			path = "Homework 9 - 08.02.2024";
+			sourceTree = "<group>";
+		};
+		429383142B712503006607D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				429383062B7123FB006607D3 /* Main.storyboard */,
+				429383262B712B51006607D3 /* StudentTableViewController.storyboard */,
+				422951D52B73B7FF00E94316 /* StudentDetailsViewController.storyboard */,
+				4293832D2B712F3A006607D3 /* StudentCreateViewController.storyboard */,
+				422951CB2B734F7A00E94316 /* ChooseTeacherViewController.storyboard */,
+				4293833B2B715B6D006607D3 /* TeacherTableViewController.storyboard */,
+				42442E0B2B7654B100A8856C /* TeacherDetailsViewController.storyboard */,
+				429383402B715E3D006607D3 /* TeacherCreateViewController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		429383152B71276D006607D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				429383192B712A66006607D3 /* Teacher+CoreDataClass.swift */,
+				4293831C2B712A66006607D3 /* Student+CoreDataProperties.swift */,
+				4293831A2B712A66006607D3 /* Teacher+CoreDataProperties.swift */,
+				4293831B2B712A66006607D3 /* Student+CoreDataClass.swift */,
+				429383162B7127E2006607D3 /* Models.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		429383252B712B1D006607D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				429383042B7123FB006607D3 /* FirstViewController.swift */,
+				429383282B712C5A006607D3 /* StudentTableViewController.swift */,
+				422951D32B73B7EC00E94316 /* StudentDetailsViewController.swift */,
+				4293832B2B712F20006607D3 /* StudentCreateViewController.swift */,
+				422951CD2B734FCF00E94316 /* ChooseTeacherViewController.swift */,
+				429383392B715B58006607D3 /* TeacherTableViewController.swift */,
+				42442E092B76545200A8856C /* TeacherDetailsViewController.swift */,
+				4293833E2B715E29006607D3 /* TeacherCreateViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4293832A2B712EE6006607D3 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				42442E0D2B765C9000A8856C /* StudentTableViewCell.swift */,
+				42442E072B76542600A8856C /* TeacherTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		429383312B7143AB006607D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				429383322B7143C1006607D3 /* CoreDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		429382FC2B7123FB006607D3 /* Homework 9 - 08.02.2024 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429383112B7123FC006607D3 /* Build configuration list for PBXNativeTarget "Homework 9 - 08.02.2024" */;
+			buildPhases = (
+				429382F92B7123FB006607D3 /* Sources */,
+				429382FA2B7123FB006607D3 /* Frameworks */,
+				429382FB2B7123FB006607D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Homework 9 - 08.02.2024";
+			productName = "Homework 9 - 08.02.2024";
+			productReference = 429382FD2B7123FB006607D3 /* Homework 9 - 08.02.2024.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		429382F52B7123FB006607D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					429382FC2B7123FB006607D3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 429382F82B7123FB006607D3 /* Build configuration list for PBXProject "Homework 9 - 08.02.2024" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 429382F42B7123FB006607D3;
+			productRefGroup = 429382FE2B7123FB006607D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				429382FC2B7123FB006607D3 /* Homework 9 - 08.02.2024 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		429382FB2B7123FB006607D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429383272B712B51006607D3 /* StudentTableViewController.storyboard in Resources */,
+				422951CC2B734F7A00E94316 /* ChooseTeacherViewController.storyboard in Resources */,
+				4293833C2B715B6D006607D3 /* TeacherTableViewController.storyboard in Resources */,
+				4293830D2B7123FC006607D3 /* LaunchScreen.storyboard in Resources */,
+				4293830A2B7123FC006607D3 /* Assets.xcassets in Resources */,
+				4293832E2B712F3A006607D3 /* StudentCreateViewController.storyboard in Resources */,
+				429383412B715E3D006607D3 /* TeacherCreateViewController.storyboard in Resources */,
+				429383082B7123FB006607D3 /* Main.storyboard in Resources */,
+				422951D62B73B7FF00E94316 /* StudentDetailsViewController.storyboard in Resources */,
+				42442E0C2B7654B100A8856C /* TeacherDetailsViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		429382F92B7123FB006607D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42442E0A2B76545200A8856C /* TeacherDetailsViewController.swift in Sources */,
+				429383302B7130D0006607D3 /* Structs.swift in Sources */,
+				429383332B7143C1006607D3 /* CoreDataService.swift in Sources */,
+				4293831E2B712A67006607D3 /* Teacher+CoreDataProperties.swift in Sources */,
+				42442E0E2B765C9000A8856C /* StudentTableViewCell.swift in Sources */,
+				429383052B7123FB006607D3 /* FirstViewController.swift in Sources */,
+				42442E082B76542600A8856C /* TeacherTableViewCell.swift in Sources */,
+				422951CE2B734FCF00E94316 /* ChooseTeacherViewController.swift in Sources */,
+				429383202B712A67006607D3 /* Student+CoreDataProperties.swift in Sources */,
+				4293833F2B715E29006607D3 /* TeacherCreateViewController.swift in Sources */,
+				429383012B7123FB006607D3 /* AppDelegate.swift in Sources */,
+				4293832C2B712F20006607D3 /* StudentCreateViewController.swift in Sources */,
+				4293831F2B712A67006607D3 /* Student+CoreDataClass.swift in Sources */,
+				4293831D2B712A66006607D3 /* Teacher+CoreDataClass.swift in Sources */,
+				429383032B7123FB006607D3 /* SceneDelegate.swift in Sources */,
+				429383292B712C5A006607D3 /* StudentTableViewController.swift in Sources */,
+				422951D42B73B7EC00E94316 /* StudentDetailsViewController.swift in Sources */,
+				4293833A2B715B58006607D3 /* TeacherTableViewController.swift in Sources */,
+				429383182B7127E2006607D3 /* Models.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		429383062B7123FB006607D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429383072B7123FB006607D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4293830B2B7123FC006607D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4293830C2B7123FC006607D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4293830F2B7123FC006607D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		429383102B7123FC006607D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		429383122B7123FC006607D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QQ4PX79VS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Homework 9 - 08.02.2024/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.Homework-9---08-02-2024";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		429383132B7123FC006607D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QQ4PX79VS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Homework 9 - 08.02.2024/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.Homework-9---08-02-2024";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		429382F82B7123FB006607D3 /* Build configuration list for PBXProject "Homework 9 - 08.02.2024" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4293830F2B7123FC006607D3 /* Debug */,
+				429383102B7123FC006607D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429383112B7123FC006607D3 /* Build configuration list for PBXNativeTarget "Homework 9 - 08.02.2024" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429383122B7123FC006607D3 /* Debug */,
+				429383132B7123FC006607D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		429383162B7127E2006607D3 /* Models.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				429383172B7127E2006607D3 /* Models.xcdatamodel */,
+			);
+			currentVersion = 429383172B7127E2006607D3 /* Models.xcdatamodel */;
+			path = Models.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 429382F52B7123FB006607D3 /* Project object */;
+}
